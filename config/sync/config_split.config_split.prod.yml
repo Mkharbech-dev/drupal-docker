@@ -1,0 +1,17 @@
+uuid: d6216c15-1e94-403f-b804-3fedf38db56f
+langcode: fr
+status: false
+dependencies: {  }
+id: prod
+label: production
+description: 'configuration de production'
+weight: 0
+folder: ../config/prod
+module: {  }
+theme: {  }
+blacklist:
+  - system.site
+graylist:
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true

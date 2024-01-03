@@ -1,0 +1,16 @@
+uuid: 602a8d93-f502-4299-8704-456af1ba54f4
+langcode: fr
+status: false
+dependencies: {  }
+id: dev
+label: Développement
+description: ''
+weight: 0
+folder: ../config/dev
+module:
+  devel: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
