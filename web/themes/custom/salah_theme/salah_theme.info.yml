@@ -1,0 +1,22 @@
+name: salah_theme
+type: theme
+description: Mon thème perso
+core_version_requirement: ^8 || ^9 || ^10
+# Defines the base theme
+base theme: olivero
+# Defines libraries group in which we can add CSS/JS.
+libraries:
+  - salah_theme/global-styling
+  - salah_theme/bootstrap
+# Regions, quote the names
+regions:
+  main: Main
+  main_menu: 'Big menu'
+  header_top: 'Header Top'
+  header: 'Header'
+  banner: 'Banner'
+  primary_menu: 'Primary menu'
+  sidebar_left: 'Sidebar Left'
+  sidebar_right: 'Sidebar Right'
+  content: 'Content'
+  footer: 'Footer'

@@ -1,0 +1,86 @@
+# This .gitignore file assume that you have a global .gitignore file configured
+# to ignore for example IDE related files.
+# See docs/01-developer/12-git.md or see https://www.drupal.org/node/1542048.
+
+# Package management systems.
+/vendor/
+/data/
+/.env
+/.env.local.php
+/docker-compose.yml
+
+# Contrib files.
+/web/core
+/web/libraries
+/web/modules/contrib
+/web/profiles/contrib
+/web/themes/contrib
+/web/translations/contrib
+/drush/contrib
+
+/web/autoload.php
+/web/index.php
+
+/web/.htaccess
+/web/robots.txt
+
+# Development config files.
+/.editorconfig
+/web/.eslintignore
+/web/.ht.router.php
+
+# Compilation.
+*.css.map
+*.js.map
+## Theme
+/web/themes/custom/*/assets/css/**/*.css
+/web/themes/custom/*/assets/js/**/*.js
+!/web/themes/custom/*/assets/js/**/*.es6.js
+/web/themes/custom/*/assets/images/optimized
+/web/themes/custom/*/templates/patterns/*/styles/**/*.css
+/web/themes/custom/*/templates/patterns/*/js/**/*.js
+!/web/themes/custom/*/templates/patterns/*/js/**/*.es6.js
+## Modules
+/web/modules/custom/*/assets/styles/**/*.css
+/web/modules/custom/*/assets/js/**/*.js
+!/web/modules/custom/*/assets/js/**/*.es6.js
+/web/modules/custom/*/templates/patterns/*/styles/**/*.css
+/web/modules/custom/*/templates/patterns/*/js/**/*.js
+!/web/modules/custom/*/templates/patterns/*/js/**/*.es6.js
+
+# Drupal's file directory.
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
+/web/sites/default/settings.local.php
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/*/files
+/private_files
+/web/sites/simpletest
+
+# Drupal local settings.
+/conf/drupal/**/settings.local.php
+/conf/drupal/sites.php
+
+# Drupal config.
+/conf/drupal/**/overrides
+
+# Backups.
+backups/*
+
+# Drupal paranoia.
+/www
+/.idea
+# Cloned repositories.
+/contrib
+# save bd.
+/drupal-docker.sql
+# Cypress.
+/scripts/tests/cypress/cypress/screenshots
+/scripts/tests/cypress/cypress/videos
+
+/sync/.htaccess
+/docker/conf/
+/docker/Dockerfile
+/docker/entrypoint.sh
