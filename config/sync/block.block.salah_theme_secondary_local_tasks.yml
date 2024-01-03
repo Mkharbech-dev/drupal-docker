@@ -1,6 +1,6 @@
 uuid: 9eb229de-4f2d-4f05-acc2-afd5d9213791
 langcode: fr
-status: true
+status: false
 dependencies:
   theme:
     - salah_theme
@@ -8,7 +8,7 @@ _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
 id: salah_theme_secondary_local_tasks
 theme: salah_theme
-region: main
+region: header
 weight: -2
 provider: null
 plugin: local_tasks_block

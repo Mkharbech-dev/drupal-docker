@@ -10,13 +10,8 @@ libraries:
   - salah_theme/bootstrap
 # Regions, quote the names
 regions:
-  main: Main
-  main_menu: 'Big menu'
-  header_top: 'Header Top'
   header: 'Header'
-  banner: 'Banner'
-  primary_menu: 'Primary menu'
-  sidebar_left: 'Sidebar Left'
-  sidebar_right: 'Sidebar Right'
+  sidebar: 'sidebar'
   content: 'Content'
-  footer: 'Footer'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'

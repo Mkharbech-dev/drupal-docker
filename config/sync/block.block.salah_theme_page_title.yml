@@ -1,6 +1,6 @@
 uuid: 26fa2850-4556-4d2d-b4f1-633e77fd7a12
 langcode: fr
-status: true
+status: false
 dependencies:
   theme:
     - salah_theme
@@ -8,7 +8,7 @@ _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
 id: salah_theme_page_title
 theme: salah_theme
-region: main
+region: header
 weight: -5
 provider: null
 plugin: page_title_block

@@ -1,6 +1,6 @@
 uuid: 89ba6077-8763-401d-9f41-0f05bfd1f0b1
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: salah_theme_breadcrumbs
 theme: salah_theme
-region: main
+region: header
 weight: 0
 provider: null
 plugin: system_breadcrumb_block
