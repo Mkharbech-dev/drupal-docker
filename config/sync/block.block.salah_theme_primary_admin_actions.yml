@@ -1,0 +1,20 @@
+uuid: bc7f4338-aa1e-47a3-bcca-6f8be955b813
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - salah_theme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: salah_theme_primary_admin_actions
+theme: salah_theme
+region: main
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: "Actions d'administration principales"
+  label_display: '0'
+  provider: core
+visibility: {  }

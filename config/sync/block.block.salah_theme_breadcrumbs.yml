@@ -1,0 +1,22 @@
+uuid: 89ba6077-8763-401d-9f41-0f05bfd1f0b1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - salah_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: salah_theme_breadcrumbs
+theme: salah_theme
+region: main
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: "Fils d'ariane"
+  label_display: '0'
+  provider: system
+visibility: {  }

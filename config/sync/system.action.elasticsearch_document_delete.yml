@@ -1,0 +1,13 @@
+uuid: cf754c3d-32d6-4a73-a350-944afa276988
+langcode: fr
+status: true
+dependencies:
+  module:
+    - elasticsearch_helper_views
+_core:
+  default_config_hash: pwsA_pfUZs9G50onz84dcE2nUmlsgThC6PopmU6E1os
+id: elasticsearch_document_delete
+label: Supprimer
+type: elasticsearch_helper
+plugin: elasticsearch_document_delete
+configuration: {  }

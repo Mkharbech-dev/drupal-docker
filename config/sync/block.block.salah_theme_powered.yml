@@ -1,0 +1,22 @@
+uuid: 11847ec4-ad17-4864-a365-6d0855c28530
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - salah_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: salah_theme_powered
+theme: salah_theme
+region: main
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Propulsé par Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

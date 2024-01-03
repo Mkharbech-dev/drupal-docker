@@ -1,0 +1,22 @@
+uuid: 7164f099-1701-4866-a19d-566df5423050
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - salah_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: salah_theme_help
+theme: salah_theme
+region: main
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Aide
+  label_display: '0'
+  provider: help
+visibility: {  }

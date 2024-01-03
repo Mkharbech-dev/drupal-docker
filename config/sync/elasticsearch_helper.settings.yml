@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: qmRKxRnqpBxqnqQ3usg0isH2_AJ4iT78nJJN4Xn0prg
+langcode: fr
+scheme: http
+hosts:
+  -
+    host: localhost
+    port: '9201'
+authentication:
+  method: ''
+  configuration: {  }
+ssl:
+  certificate: ''
+  skip_verification: false
+defer_indexing: false
