@@ -1,0 +1,7 @@
+custom_config.settings_form:
+  path: '/admin/config/system/liens-sociaux'
+  defaults:
+    _title: 'Configurer les liens sociaux.'
+    _form: 'Drupal\custom_config\Form\SettingsForm'
+  requirements:
+    _permission: 'administer custom_config configuration'
