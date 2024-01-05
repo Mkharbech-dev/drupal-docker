@@ -1,0 +1,5 @@
+name: 'custom_config'
+type: module
+description: 'module pde config pérsonnalisée des liens sociaux'
+package: Custom
+core_version_requirement: ^10
