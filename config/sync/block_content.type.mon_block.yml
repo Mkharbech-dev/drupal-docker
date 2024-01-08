@@ -1,0 +1,8 @@
+uuid: 72cf30bb-85fe-4a08-87d8-0840e39ecc8d
+langcode: fr
+status: true
+dependencies: {  }
+id: mon_block
+label: mon_block
+revision: 0
+description: 'block pérsonnalisé'

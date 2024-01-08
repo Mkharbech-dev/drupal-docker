@@ -10,8 +10,8 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: salah_theme_breadcrumbs
 theme: salah_theme
-region: header
-weight: 0
+region: breadcrumb
+weight: -9
 provider: null
 plugin: system_breadcrumb_block
 settings:

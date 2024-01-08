@@ -1,0 +1,18 @@
+uuid: 2d2737d2-794a-4b9e-9e4a-ff43781e78ec
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - salah_theme
+id: salah_theme_actionsdadministrationprincipales
+theme: salah_theme
+region: highlighted
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: "Actions d'administration principales"
+  label_display: '0'
+  provider: core
+visibility: {  }

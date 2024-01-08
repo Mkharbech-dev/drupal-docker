@@ -1,6 +1,6 @@
 uuid: efc7c2db-c402-4c05-8767-b1b728979c06
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - node
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
 id: salah_theme_syndicate
 theme: salah_theme
-region: header
-weight: 0
+region: social
+weight: -7
 provider: null
 plugin: node_syndicate_block
 settings:

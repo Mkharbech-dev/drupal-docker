@@ -1,0 +1,37 @@
+uuid: 52a99767-8f42-445d-a9e8-4270ce4c2887
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.mon_block
+    - field.storage.block_content.field_image
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+id: block_content.mon_block.field_image
+field_name: field_image
+entity_type: block_content
+bundle: mon_block
+label: image
+description: 'image du block pérso'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      video: video
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

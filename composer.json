@@ -25,6 +25,7 @@
         "drupal/elasticsearch_helper_content": "^8.0",
         "drupal/elasticsearch_helper_index_management": "^8.0",
         "drupal/elasticsearch_helper_views": "^8.0",
+        "drupal/mahi": "^1.0",
         "drush/drush": "^12.4"
     },
     "conflict": {

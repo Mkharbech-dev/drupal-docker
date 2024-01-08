@@ -9,7 +9,7 @@ _core:
 id: salah_theme_primary_admin_actions
 theme: salah_theme
 region: header
-weight: -5
+weight: -9
 provider: null
 plugin: local_actions_block
 settings:

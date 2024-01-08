@@ -1,0 +1,20 @@
+uuid: 358c63bd-d479-42d8-9314-98b5318405f3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - salah_theme
+id: salah_theme_propulsepardrupal
+theme: salah_theme
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Propulsé par Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

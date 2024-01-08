@@ -1,6 +1,6 @@
 uuid: 58c54399-1b3b-4eb4-9e1b-0f9afe03ad00
 langcode: fr
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -12,8 +12,8 @@ _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
 id: salah_theme_account_menu
 theme: salah_theme
-region: header
-weight: -4
+region: secondary_menu
+weight: -6
 provider: null
 plugin: 'system_menu_block:account'
 settings:

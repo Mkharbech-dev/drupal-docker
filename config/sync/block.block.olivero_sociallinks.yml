@@ -1,0 +1,20 @@
+uuid: 72513814-d470-43c5-b5d4-6d03f5162fc7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - custom_config
+  theme:
+    - olivero
+id: olivero_sociallinks
+theme: olivero
+region: social
+weight: -6
+provider: null
+plugin: custom_config_social_links
+settings:
+  id: custom_config_social_links
+  label: 'Social links'
+  label_display: visible
+  provider: custom_config
+visibility: {  }

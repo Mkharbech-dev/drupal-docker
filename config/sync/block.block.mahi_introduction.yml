@@ -1,0 +1,30 @@
+uuid: bc66d313-21d1-4a8f-a1d0-46635c5ad4be
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:646c7f9a-ecb7-43a4-aa77-8ac0200611c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - mahi
+id: mahi_introduction
+theme: mahi
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:646c7f9a-ecb7-43a4-aa77-8ac0200611c6'
+settings:
+  id: 'block_content:646c7f9a-ecb7-43a4-aa77-8ac0200611c6'
+  label: Introduction
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/7

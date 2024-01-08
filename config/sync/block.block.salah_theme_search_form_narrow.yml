@@ -1,6 +1,6 @@
 uuid: b8ee96b4-ff59-4d2d-aac3-ab8f1516cb8e
 langcode: fr
-status: false
+status: true
 dependencies:
   module:
     - search
@@ -10,8 +10,8 @@ _core:
   default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
 id: salah_theme_search_form_narrow
 theme: salah_theme
-region: header
-weight: -4
+region: primary_menu
+weight: -7
 provider: null
 plugin: search_form_block
 settings:

@@ -1,0 +1,20 @@
+uuid: 98ab0a0d-5698-41c9-8137-75b8ca1aac49
+langcode: fr
+status: true
+dependencies:
+  module:
+    - custom_config
+  theme:
+    - salah_theme
+id: salah_theme_sociallinks
+theme: salah_theme
+region: social
+weight: -8
+provider: null
+plugin: custom_config_social_links
+settings:
+  id: custom_config_social_links
+  label: 'Social links'
+  label_display: visible
+  provider: custom_config
+visibility: {  }
