@@ -1,0 +1,32 @@
+uuid: 1de9e600-5aee-43c6-bc64-bad19f8b5f80
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - node
+    - views
+  theme:
+    - mahi
+id: mahi_views_block__categories_block_2
+theme: mahi
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:categories-block_2'
+settings:
+  id: 'views_block:categories-block_2'
+  label: Catégories
+  label_display: visible
+  provider: views
+  views_label: Catégories
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog

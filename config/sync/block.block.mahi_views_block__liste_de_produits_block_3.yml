@@ -1,0 +1,32 @@
+uuid: 3183ac9e-a3cb-4b66-a4b3-3cc16ad0e886
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.liste_de_produits
+  module:
+    - node
+    - views
+  theme:
+    - mahi
+id: mahi_views_block__liste_de_produits_block_3
+theme: mahi
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:liste_de_produits-block_3'
+settings:
+  id: 'views_block:liste_de_produits-block_3'
+  label: 'Articles liés'
+  label_display: visible
+  provider: views
+  views_label: 'Articles liés'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog

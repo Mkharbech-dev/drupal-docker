@@ -11,7 +11,7 @@ _core:
 id: mahi_help
 theme: mahi
 region: content
-weight: -10
+weight: -5
 provider: null
 plugin: help_block
 settings:

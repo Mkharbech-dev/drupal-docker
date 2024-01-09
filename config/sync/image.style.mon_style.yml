@@ -1,0 +1,15 @@
+uuid: c09dc741-25df-4f06-ad5a-60930f698389
+langcode: fr
+status: true
+dependencies: {  }
+name: mon_style
+label: mon_style
+effects:
+  01015549-cb2c-4def-af16-91291f0ef38a:
+    uuid: 01015549-cb2c-4def-af16-91291f0ef38a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 550
+      anchor: center-center

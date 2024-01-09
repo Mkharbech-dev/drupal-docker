@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.blog.field_categorie
     - field.field.node.blog.field_image
     - field.field.node.blog.field_tags
-    - image.style.wide
+    - image.style.mon_style
     - node.type.blog
   module:
     - comment
@@ -50,7 +50,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: mon_style
       image_loading:
         attribute: eager
     third_party_settings: {  }

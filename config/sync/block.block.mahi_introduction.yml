@@ -12,7 +12,7 @@ dependencies:
 id: mahi_introduction
 theme: mahi
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: 'block_content:646c7f9a-ecb7-43a4-aa77-8ac0200611c6'
 settings:
