@@ -12,7 +12,7 @@ dependencies:
 id: mahi_views_block__liste_de_produits_block_3
 theme: mahi
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:liste_de_produits-block_3'
 settings:

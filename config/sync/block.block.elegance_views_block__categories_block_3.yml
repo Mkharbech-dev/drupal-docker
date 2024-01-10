@@ -1,0 +1,32 @@
+uuid: bbd9a8f2-8e32-43de-a311-567bca5af04a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - node
+    - views
+  theme:
+    - elegance
+id: elegance_views_block__categories_block_3
+theme: elegance
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:categories-block_3'
+settings:
+  id: 'views_block:categories-block_3'
+  label: Etiquètes
+  label_display: visible
+  provider: views
+  views_label: Etiquètes
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog

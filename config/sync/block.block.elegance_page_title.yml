@@ -1,0 +1,20 @@
+uuid: 09db5794-3c17-4396-b1ab-64601a9bcd9a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - elegance
+_core:
+  default_config_hash: cRYQm774QG7qaYT0wk4ptn-GMhoe4ErDyexgsj4TKfQ
+id: elegance_page_title
+theme: elegance
+region: page_header
+weight: -13
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

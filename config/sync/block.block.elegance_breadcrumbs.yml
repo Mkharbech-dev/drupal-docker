@@ -1,0 +1,22 @@
+uuid: 529f952b-1cbf-4071-91d0-8d7668e3c200
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - elegance
+_core:
+  default_config_hash: E7ZFXXrrN9ZTeE2myhyEjYge1XXRgTPXN9a5c8KoyrM
+id: elegance_breadcrumbs
+theme: elegance
+region: page_header
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

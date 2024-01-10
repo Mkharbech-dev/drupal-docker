@@ -153,6 +153,12 @@ display:
             group_items: {  }
       style:
         type: grid_responsive
+        options:
+          grouping: {  }
+          columns: 6
+          cell_min_width: 100
+          grid_gutter: 10
+          alignment: horizontal
       row:
         type: fields
       query:

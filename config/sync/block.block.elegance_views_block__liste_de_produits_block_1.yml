@@ -1,0 +1,29 @@
+uuid: 035d7b65-4ebd-4f28-bfab-9fe241024c9a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.liste_de_produits
+  module:
+    - system
+    - views
+  theme:
+    - elegance
+id: elegance_views_block__liste_de_produits_block_1
+theme: elegance
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:liste_de_produits-block_1'
+settings:
+  id: 'views_block:liste_de_produits-block_1'
+  label: 'Liste de produits'
+  label_display: visible
+  provider: views
+  views_label: 'Liste de produits'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/7

@@ -1,0 +1,22 @@
+uuid: c11a605b-f678-4abf-ac28-3b02bf17ae75
+langcode: en
+status: true
+dependencies:
+  theme:
+    - elegance
+_core:
+  default_config_hash: 4WmbqV_BiKsuJxbaTjH1FrfTA3__jmXBBEjfFSOdk4E
+id: elegance_secondary_local_tasks
+theme: elegance
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

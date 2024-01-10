@@ -1,0 +1,32 @@
+uuid: 1aab28bc-3cf6-40a5-b7eb-12a5e899796d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - node
+    - views
+  theme:
+    - elegance
+id: elegance_views_block__categories_block_2
+theme: elegance
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:categories-block_2'
+settings:
+  id: 'views_block:categories-block_2'
+  label: Catégories
+  label_display: visible
+  provider: views
+  views_label: Catégories
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog

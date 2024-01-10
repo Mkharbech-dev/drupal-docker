@@ -1,0 +1,20 @@
+uuid: ca9447de-088a-4498-8656-d2f1e943a80f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - elegance
+_core:
+  default_config_hash: bxfUm8OiHyh66yCgvAPPb1uVzcEDmaptB9Wr4_iwayY
+id: elegance_primary_admin_actions
+theme: elegance
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,102 @@
+<?php
+/**
+ * elegance theme overrides and preprocess functions.
+ */
+use Drupal\file\Entity\File;
+/**
+ * Sanitise input urls.
+ */
+function sanitise_val_url($url) {
+	if ($url != '') {
+		// Sanitise (remove all illegal characters) from url.
+		$url = filter_var($url, FILTER_SANITIZE_URL);
+		// Validate url.
+		if (filter_var($url, FILTER_VALIDATE_URL) == TRUE) {
+			$url = $url;
+		} else {
+			$url = '#';
+		}
+		return $url;
+	}
+}
+
+/* *
+ * page preprocess
+ */
+function elegance_preprocess_page(array &$variables) {
+	$config = \Drupal::config('system.site');
+	$variables['site_name'] = $config->get('name');
+	$variables['site_slogan'] = $config->get('slogan');
+	$variables['slider_show'] = theme_get_setting('slider_show', 'elegance');
+	$variables['slider_code'] = theme_get_setting('slider_code', 'elegance');
+	$variables['all_icons_show'] = theme_get_setting('all_icons_show', 'elegance');
+	$variables['facebook_url'] = sanitise_val_url(theme_get_setting('facebook_url', 'elegance'));
+	$variables['twitter_url'] = sanitise_val_url(theme_get_setting('twitter_url', 'elegance'));
+	$variables['instagram_url'] = sanitise_val_url(theme_get_setting('instagram_url', 'elegance'));
+	$variables['linkedin_url'] = sanitise_val_url(theme_get_setting('linkedin_url', 'elegance'));
+	$variables['youtube_url'] = sanitise_val_url(theme_get_setting('youtube_url', 'elegance'));
+	$variables['vk_url'] = sanitise_val_url(theme_get_setting('vk_url', 'elegance'));
+	$variables['vimeo_url'] = sanitise_val_url(theme_get_setting('vimeo_url', 'elegance'));
+	$variables['whatsapp_url'] = sanitise_val_url(theme_get_setting('whatsapp_url', 'elegance'));
+	$variables['github_url'] = sanitise_val_url(theme_get_setting('github_url', 'elegance'));
+	$variables['telegram_url'] = sanitise_val_url(theme_get_setting('telegram_url', 'elegance'));
+	$variables['scrolltotop_on'] = theme_get_setting('scrolltotop_on', 'elegance');
+	$variables['copyright_text'] = theme_get_setting('copyright_text', 'elegance');
+}
+
+/* *
+ * Node preprocess.
+ */
+function elegance_preprocess_node(array &$variables) {
+	$variables['node_author_pic'] = theme_get_setting('node_author_pic', 'elegance');
+	$variables['node_tags'] = theme_get_setting('node_tags', 'elegance');
+}
+
+/**
+ * Html preprocess for Elegance theme.
+ */
+function elegance_preprocess_html(&$variables) {
+	$variables['base_path'] = base_path();
+	$variables['font_src'] = theme_get_setting('font_src', 'elegance');
+	// Layout
+	$variables['container_width'] = theme_get_setting('container_width', 'elegance');
+	$variables['header_width'] = theme_get_setting('header_width', 'elegance');
+	$variables['main_width'] = theme_get_setting('main_width', 'elegance');
+	$variables['footer_width'] = theme_get_setting('footer_width', 'elegance');
+  $variables['css_extra'] = theme_get_setting('css_extra', 'elegance');
+  $variables['css_code'] = theme_get_setting('css_code', 'elegance');
+	$variables['highlight_author_comment'] = theme_get_setting('highlight_author_comment', 'elegance');
+  $variables['fontawesome_five'] = theme_get_setting('fontawesome_five', 'elegance');
+  $variables['fontawesome_six'] = theme_get_setting('fontawesome_six', 'elegance');
+	$variables['bootstrapicons'] = theme_get_setting('bootstrapicons', 'elegance');
+  $variables['slider_time'] = theme_get_setting('slider_time', 'elegance');
+  $variables['slider_dots'] = theme_get_setting('slider_dots', 'elegance');
+	$variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+	/* Slider image */
+	$slider_images = theme_get_setting('slider_images', 'elegance');
+	if(!empty($slider_images)) {
+		foreach ($slider_images as $fid) {
+			$file = File::load($fid);
+			$file->setPermanent();
+			$file->save();
+			$file_usage = \Drupal::service('file.usage');
+			$file_usage->add($file, 'elegance', 'theme', $fid);
+		}
+	}
+}
+
+/* *
+ * Add current page to breadcrumb.
+ */
+function elegance_preprocess_breadcrumb(&$variables) {
+	$request = \Drupal::request();
+	$route_match = \Drupal::routeMatch();
+	$page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+	if (!empty($page_title)) {
+		$variables['breadcrumb'][] = [
+			'text' => $page_title,
+		];
+		// Add cache context based on url.
+		$variables['#cache']['contexts'][] = 'url';
+	}
+}

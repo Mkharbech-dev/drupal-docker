@@ -1,0 +1,36 @@
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+container_width: ''
+header_width: header_width_contained
+main_width: main_width_contained
+footer_width: footer_width_contained
+all_icons_show: 1
+facebook_url: 'https://www.facebook.com'
+twitter_url: 'https://twitter.com'
+instagram_url: 'https://www.instagram.com'
+linkedin_url: 'https://in.linkedin.com'
+youtube_url: 'https://www.youtube.com'
+vimeo_url: ''
+vk_url: ''
+whatsapp_url: ''
+github_url: 'https://github.com'
+telegram_url: ''
+slider_show: 1
+slider_images: {  }
+slider_code: ''
+scrolltotop_on: 0
+copyright_text: 1
+css_extra: 0
+css_code: ''
+font_src: ''
+fontawesome_five: 0
+fontawesome_six: 0
+bootstrapicons: 0
+highlight_author_comment: 0

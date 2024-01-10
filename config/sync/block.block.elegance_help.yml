@@ -1,0 +1,22 @@
+uuid: 661b033c-88f8-4066-ac95-d211bfe7a746
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - elegance
+_core:
+  default_config_hash: BU5xL7pDumVrL7nLQ8CMrSuOQA_LWC6AMIYfRXWWaXM
+id: elegance_help
+theme: elegance
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

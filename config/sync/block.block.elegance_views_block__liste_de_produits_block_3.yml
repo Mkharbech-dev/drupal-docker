@@ -1,0 +1,32 @@
+uuid: 0d7131bd-e136-43c8-b7b8-128ca120bfe6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.liste_de_produits
+  module:
+    - node
+    - views
+  theme:
+    - elegance
+id: elegance_views_block__liste_de_produits_block_3
+theme: elegance
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:liste_de_produits-block_3'
+settings:
+  id: 'views_block:liste_de_produits-block_3'
+  label: 'Articles liés'
+  label_display: visible
+  provider: views
+  views_label: 'Articles liés'
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog

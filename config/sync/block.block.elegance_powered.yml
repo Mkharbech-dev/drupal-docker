@@ -1,0 +1,22 @@
+uuid: d42067c9-3dfc-4b79-9d2a-375a8cf4e833
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - elegance
+_core:
+  default_config_hash: V9UXsAvkCs7smSITh8JQxBok2w1J2sij-DuV24kjl3s
+id: elegance_powered
+theme: elegance
+region: hidden_blocks
+weight: -13
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

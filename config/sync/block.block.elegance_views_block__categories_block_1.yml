@@ -1,0 +1,29 @@
+uuid: fd72d73a-9fd7-4431-92fd-f2bd5f4fd725
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.categories
+  module:
+    - system
+    - views
+  theme:
+    - elegance
+id: elegance_views_block__categories_block_1
+theme: elegance
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:categories-block_1'
+settings:
+  id: 'views_block:categories-block_1'
+  label: Catégories
+  label_display: visible
+  provider: views
+  views_label: Catégories
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/7
