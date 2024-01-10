@@ -438,7 +438,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 12
+          items_per_page: 9
           total_pages: null
           id: 0
           tags:
@@ -517,7 +517,7 @@ display:
         type: grid_responsive
         options:
           grouping: {  }
-          columns: 5
+          columns: 3
           cell_min_width: 100
           grid_gutter: 10
           alignment: horizontal

@@ -248,7 +248,12 @@ var {
 .field--name-body {
   padding: 20px 20px;
 }
+/* titre produits*/
 .views-field-title, .views-field-view-node{
+  text-align: center;
+}
+/* categories*/
+.views-view-responsive-grid {
   text-align: center;
 }
 /* Typography -> Blockquote */
