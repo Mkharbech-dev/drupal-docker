@@ -8,10 +8,10 @@ use Drupal\Core\Form\FormStateInterface;
 function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
   $form['#attached']['library'][] = 'elegance/theme-settings';
   $elegancepro_img = $GLOBALS['base_url'] . '/' . \Drupal::service('extension.list.theme')->getPath('elegance') . '/images/mahipro.png';
-  $elegancepro = '<img src="'.$elegancepro_img.'" alt="mahipro" />';
+  $elegancepro = '<img src="'.$elegancepro_img.'" alt="elegancepro" />';
   $form['elegance'] = [
     '#type'       => 'vertical_tabs',
-    '#title'      => '<h3>' . t('Mahi Theme Settings') . '</h3>',
+    '#title'      => '<h3>' . t('Elegance Theme Settings') . '</h3>',
     '#default_tab' => 'general',
   ];
   // General settings tab.
@@ -107,13 +107,13 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
   $form['general']['general_info'] = [
     '#type'        => 'fieldset',
     '#title'       => t('Theme Info'),
-    '#description' => t('<a href="https://drupar.com/theme/mahi" target="_blank">Theme Homepage</a> || <a href="https://demo.drupar.com/mahi/" target="_blank">Theme Demo</a> || <a href="https://drupar.com/doc/mahi" target="_blank">Theme Documentation</a> || <a href="https://drupar.com/doc/elegance/support" target="_blank">Theme Support</a>'),
+    '#description' => t('<a href="#" target="_blank">Theme Homepage</a> || <a href="#" target="_blank">Theme Demo</a> || <a href="#" target="_blank">Theme Documentation</a> || <a href="#" target="_blank">Theme Support</a>'),
   ];
 
   $form['general']['general_info_upgrade'] = [
     '#type'        => 'fieldset',
     '#title'       => t('Upgrade To MahiPro for $29 only'),
-    '#description' => t('<a href="https://drupar.com/theme/mahipro" target="_blank">Purchase MahiPro</a> || <a href="https://demo.drupar.com/mahipro/" target="_blank">MahiPro Demo</a>'),
+    '#description' => t('<a href="#" target="_blank">Purchase MahiPro</a> || <a href="#" target="_blank">Elegance Demo</a>'),
   ];
   // Layout -> Container width
   $form['layout']['layout_container'] = [
@@ -165,7 +165,7 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
   $form['color']['theme_color'] = [
     '#type'        => 'fieldset',
     '#title'       => t('Theme Color'),
-    '#description'   => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/mahipro" target="_blank">Buy MahiPro for $29 only.</a>'),
+    '#description'   => t('This feature is available in the premium version of this theme. <a href="#" target="_blank">in developpement</a>'),
   ];
   // Social settings
   /* Social -> Show or hide all icons */
@@ -327,7 +327,7 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
   $form['header']['sticky_header'] = [
     '#type'        => 'fieldset',
     '#title'       => t('Sticky Header'),
-    '#description'   => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/mahipro" target="_blank">Buy MahiPro for $29 only.</a>'),
+    '#description'   => t('This feature is available in the premium version of this theme. <a href="#" target="_blank">en cours</a>'),
   ];
   $form['header']['header_links'] = [
     '#type'        => 'fieldset',
@@ -338,7 +338,7 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
   $form['sidebar']['animated_sidebar'] = [
     '#type'        => 'fieldset',
     '#title'       => t('Animated Sliding Sidebar'),
-    '#description'   => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/mahipro" target="_blank">Buy MahiPro for $29 only.</a>'),
+    '#description'   => t('This feature is available in the premium version of this theme. <a href=""#"" target="_blank">encours.</a>'),
   ];
   // Content
   $form['content']['content_tab'] = [
@@ -355,14 +355,14 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
   $form['content_tab']['preloader'] = [
     '#type'        => 'details',
     '#title'       => t('Pre Page Loader'),
-    '#description' => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/mahipro" target="_blank">Buy elegancePro for $29 only.</a>'),
+    '#description' => t('This feature is available in the premium version of this theme. <a href="#" target="_blank">encours.</a>'),
     '#group' => 'content_tab',
   ];
   // content -> Animated Content
   $form['content_tab']['animated_content'] = [
     '#type'        => 'details',
     '#title'       => t('Animated Content'),
-    '#description' => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/mahipro" target="_blank">Buy elegancePro for $29 only.</a>'),
+    '#description' => t('This feature is available in the premium version of this theme. <a href="#" target="_blank">encours.</a>'),
     '#group' => 'content_tab',
   ];
   // content -> theme font
@@ -395,7 +395,7 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
   $form['content_tab']['node_share'] = [
     '#type'        => 'details',
     '#title'       => t('Share Page'),
-    '#description' => t('<p><strong>Share Page On Social Media</strong></p><p>This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/elegancepro" target="_blank">Buy elegancePro for $29 only.</a></p>'),
+    '#description' => t('<p><strong>Share Page On Social Media</strong></p><p>This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/elegancepro" target="_blank">encours.</a></p>'),
     '#group' => 'content_tab',
   ];
   // content -> share page
@@ -492,13 +492,13 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
   $form['footer']['copyright']['copyright_text_custom'] = [
     '#type'          => 'fieldset',
     '#title'         => t('Custom copyright text'),
-    '#description'   => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/elegancepro" target="_blank">Buy elegancePro for $29 only.</a>'),
+    '#description'   => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/elegancepro" target="_blank">encours.</a>'),
   ];
   // Footer -> Cookie message.
   $form['footer']['cookie'] = [
     '#type'        => 'fieldset',
     '#title'       => t('Cookie Consent message'),
-    '#description'   => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/elegancepro" target="_blank">Buy elegancePro for $29 only.</a>'),
+    '#description'   => t('This feature is available in the premium version of this theme. <a href="https://drupar.com/theme/elegancepro" target="_blank">encours.</a>'),
   ];
   $form['footer']['cookie']['cookie_message'] = [
     '#type'        => 'fieldset',
@@ -587,10 +587,10 @@ function elegance_form_system_theme_settings_alter(&$form, FormStateInterface $f
     '#type'        => 'fieldset',
     '#title'         => t('Theme Support'),
     '#description' => t('<h4>Documentation</h4>
-    <p>We have a detailed documentation about how to use theme. Please read the <a href="https://drupar.com/doc/mahi" target="_blank">Mahi Theme Documentation</a>.</p>
+    <p>We have a detailed documentation about how to use theme. Please read the <a href="#" target="_blank">Elegance Theme Documentation</a>.</p>
     <hr />
     <h4>Open An Issue</h4>
-    <p>If you need support that is beyond our theme documentation, please <a href="https://www.drupal.org/project/issues/mahi?categories=All" target="_blank">open an issue</a> at project page.</p>
+    <p>If you need support that is beyond our theme documentation, please <a href="#" target="_blank">open an issue</a> at project page.</p>
     <hr />
     <h4>Contact Us</h4>
     <p>If you need some specific customization in theme, please contact us<br><a href="https://drupar.com/contact" target="_blank">drupar.com/contact</a></p>'),

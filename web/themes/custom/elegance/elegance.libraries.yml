@@ -5,7 +5,7 @@ global-styling:
     theme:
       css/style.css: {}
   js:
-    js/mahi.js: {}
+    js/elegance.js: {}
   dependencies:
     - core/jquery
 # Slider

@@ -1,14 +1,11 @@
 name: Elegance
 type: theme
-base theme: mahi
-description: '<p>elegance est un theme basé sur le theme mahi de  <a href="https://drupar.com/" target="_blank">Drupar.com</a></p><p><a href="https://drupar.com/theme/mahi" target="_blank">Theme Homepage</a> | <a href="https://drupar.com/doc/mahi" target="_blank">User Guide</a></p>'
+base theme: false
+description: '<p>elegance est un theme pérsonnalisé'
 package: Drupar
 core_version_requirement: ^9 || ^10
-# Comment version before uploading to drupal.org
-# version: 1.0.14
-# Libraries
 libraries:
-  - elegance/global-styling # Library for all global css. These css will be loaded on every pages.
+  - elegance/global-styling
 regions:
   header_top: 'Header Top'
   site_branding: 'Site Branding'
@@ -29,7 +26,6 @@ regions:
   footer_bottom: 'Footer Bottom'
   hidden_blocks: 'Hidden Blocks'
 
-# Information added by Drupal.org packaging script on 2023-12-27
 version: '1.0.14'
 project: 'elegance'
 datestamp: 1703698451
